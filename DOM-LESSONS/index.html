@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+
+    <style>
+      body {
+        background-color: aqua;
+      }
+
+      .items {
+        display: flex;
+        justify-content: space-around;
+        padding: 5px;
+        background-color: aquamarine;
+      }
+      .heading {
+        text-align: center;
+        text-shadow: 2px 3px #ccc;
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box-one"><h2>Box one</h2></div>
+
+    <div class="box-two"><h2>Box two</h2></div>
+
+    <h1 class="head">Programming Langs</h1>
+    <button onclick="myFunc()">CLICK ME</button>
+    <h1>Programming Langs</h1>
+    <h1>Programming Langs</h1>
+
+    <p>Lorem ipsum dolor sit amet.</p>
+
+    <p id="el" onclick="changeMe(this)">el</p>
+
+    <script>
+      function changeMe() {
+        this.innerHTML.value = 'Samuel'
+      }
+    </script>
+
+    <ul>
+      <li class="list-items">A</li>
+      <li class="list-items">B</li>
+      <li class="list-items">C</li>
+      <li class="list-items">D</li>
+      <li class="list-items">E</li>
+    </ul>
+
+    <!-- Js function -->
+
+    <script>
+      let h1 = document.getElementsByTagName('h1')
+      h1[1].setAttribute(
+        'style',
+        'background-color:yellow; text-align:center; padding:15px',
+      )
+
+      function myFunc() {
+        let headIng = document.querySelector('.head')
+        headIng.classList.toggle('heading')
+      }
+    </script>
+    <!-- js -->
+    <script src="index.js"></script>
+  </body>
+</html>
