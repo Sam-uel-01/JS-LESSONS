@@ -28,6 +28,10 @@ let items = document.querySelectorAll('.list-items')
 console.log(items)
 // items[items.length - 1].style.fontSize = '30px'
 
+// 6. getElementsByName()
+
+//
+
 // DOM MANIPULATION - ADDING AND DELETING ELEMENTS
 // 1. Creating Elements - createElement()
 // 2. Removing Elements - removeChild()

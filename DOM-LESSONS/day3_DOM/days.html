@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day3</title>
+
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+      .container {
+        height: 400px;
+        border: 1px solid #ccc;
+        width: 60%;
+        border-radius: 25px;
+        box-shadow: 2px 3px 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      .shine {
+        text-shadow: 1px 2px 1px yellow;
+        text-transform: uppercase;
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <h2 class="shine">This is a Div</h2>
+      <img
+        width="100px"
+        src="https://images.pexels.com/photos/3967014/pexels-photo-3967014.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        alt=""
+      />
+      <button>
+        click
+      </button>
+    </div>
+    <script>
+      // 4 METHODS OF MODIFYING ELEMENTS ATTRIBUTES
+      // 1. Checking if an element has attribute - .hasAttribute()
+      let image = document.querySelector('img')
+      console.log(image.hasAttribute('src'))
+      // 2. Fetching the attribute Value of an element - getAttribute()
+      console.log(image.getAttribute('src'))
+
+      // 3. Setting a new Attribute - setAttribute()
+      let main = document.getElementById('main')
+      main.setAttribute('class', 'container')
+
+      let btn = document.querySelector('button')
+      btn.setAttribute(
+        'style',
+        'padding:10px; border-radius:10px; background-color:yellowgreen',
+      )
+
+      btn.btn // 4. Removing an Attribute - removeAttribute()
+        .addEventListener('click', () => {
+          heading.removeAttribute('class')
+        })
+    </script>
+  </body>
+</html>

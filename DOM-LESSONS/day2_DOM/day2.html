@@ -16,7 +16,31 @@
       <p>Lorem ipsum dolor sit amet.</p>
     </div>
 
+    <div>
+      <ul>
+        <li name="list-items">A</li>
+        <li name="list-items">B</li>
+        <li name="list-items">C</li>
+        <li name="list-items">D</li>
+        <li name="list-items">E</li>
+      </ul>
+    </div>
+
     <!-- Js Below -->
     <script src="./day2.js"></script>
+
+    <script>
+      // getElementsByName() ---sample
+      const { log } = console
+      let items = document.getElementsByName('list-items')
+
+      // items.forEach((item) => {
+      //   item.style.backgroundColor = 'red'
+      // })
+
+      // items[4].style.backgroundColor = 'red'
+
+      // log(items)
+    </script>
   </body>
 </html>
